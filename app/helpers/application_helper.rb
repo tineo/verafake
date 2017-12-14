@@ -9,9 +9,9 @@ module ApplicationHelper
     ip = controller.request.remote_ip()
     
     if(ip =~ /^192/)
-      return "http://" + INTERNAL_IP + "/crm/"
+      return "http://" + INTERNAL_IP + "/sugar/"
     else
-      return "http://" + EXTERNAL_IP + "/crm/"
+      return "http://" + EXTERNAL_IP + "/sugar/"
     end
   end
   
